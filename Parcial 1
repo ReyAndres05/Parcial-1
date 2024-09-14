@@ -1,0 +1,32 @@
+
+package ScannerArrays;
+
+public class Parcial {
+
+    public static void main(String[] args) {
+        
+        int dividendo = 37;
+        int divisor = 3;
+        int cociente = 0;
+        int residuo = dividendo;
+
+        
+        while (residuo >= divisor) {
+            residuo = residuo - divisor;
+            cociente++;
+        }       
+        if (residuo == 0) {
+           
+            System.out.println("La división es exacta.");
+                       
+            System.out.println("Cociente: " + cociente);
+        } else {
+            
+            System.out.println("La división es inexacta.");
+            
+            System.out.println("Cociente: " + cociente);
+            
+            System.out.println("Residuo: " + residuo);
+        }
+    }
+}
